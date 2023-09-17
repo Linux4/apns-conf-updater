@@ -55,9 +55,10 @@ jobs:
        rm ${{ matrix.model }}-${{ steps.check.outputs.latest_version_short }}.zip
        lz4 -d -m --rm super.img.lz4
        simg2img super.img super.raw
+       rm super.img
        wget https://raw.githubusercontent.com/unix3dgforce/lpunpack/master/lpunpack.py
        python3 lpunpack.py -p system super.raw .
-       rm lpunpack.py super.img super.raw
+       rm lpunpack.py super.raw
        mkdir root
        sudo mount -o ro ./system.img ./root
        cp root/system/etc/apns-conf.xml .
