@@ -21,15 +21,6 @@
 <!-- This version must agree with that in apps/common/res/apns.xml -->
 <apns version="8">
 
-<!--
-  <apn carrier="Cosmote Wireless Internet"
-      mcc="202"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Cosmote Internet"
       mcc="202"
       mnc="01"
@@ -74,16 +65,6 @@
       bearer_bitmask="18"
       user_visible="false"
   />
-
-
-<!--
-  <apn carrier="Vf Mobile Internet"
-      mcc="202"
-      mnc="05"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Vf Internet"
       mcc="202"
@@ -558,6 +539,7 @@
       protocol="IPV4V6"
       roaming_protocol="IP"
       mvno_type="gid"
+      user_visible="false"
       mvno_match_data="BA01450000000000"
   />
 
@@ -569,6 +551,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV6"
       mvno_type="gid"
+      user_visible="false"
       mvno_match_data="BA01450000000000"
   />
 
@@ -579,6 +562,7 @@
       type="cbs"
       protocol="IPV4V6"
       roaming_protocol="IP"
+      user_visible="false"
       mvno_type="gid"
       mvno_match_data="BA01450000000000"
   />
@@ -790,8 +774,6 @@
       apn="mms"
       mmsc="http://mms.altice.com/mmsc/MMS"
       type="mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="11FFFFFFFFFFFFFF"
   />
@@ -869,8 +851,6 @@
       apn="mms"
       mmsc="http://mms.altice.com/mmsc/MMS"
       type="mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="11FFFFFFFFFFFFFF"
   />
@@ -919,15 +899,6 @@
       mvno_type="gid"
       mvno_match_data="11FFFFFFFFFFFFFF"
   />
-
-<!--
-  <apn carrier="T-Mobile Internet"
-      mcc="204"
-      mnc="16"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Internet"
       mcc="204"
@@ -1121,15 +1092,6 @@
       mvno_type="spn"
   />
 
-<!--
-  <apn carrier="T-Mobile Internet"
-      mcc="204"
-      mnc="20"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Ziggo Internet"
       mcc="204"
       mnc="18"
@@ -1243,15 +1205,6 @@
       roaming_protocol="IP"
       authtype="0"
   />
-
-<!--
-  <apn carrier="Px Internet"
-      mcc="206"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Px Internet"
       mcc="206"
@@ -1630,7 +1583,6 @@
       apn="cdma"
       mmsc="http://mms.vzwreseller.com/servlets/mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="2296"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mvno_type="gid"
@@ -1642,7 +1594,6 @@
       mnc="04"
       apn="VZWINTERNET"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       type="default,dun,supl"
       mvno_type="gid"
       mvno_match_data="BA01490000000000"
@@ -2130,15 +2081,6 @@
       authtype="1"
   />
 
-<!--
-  <apn carrier="BASE WAP"
-      mcc="206"
-      mnc="20"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="BASE Internet"
       mcc="206"
       mnc="20"
@@ -2198,7 +2140,6 @@
       mmsc="http://mms.orange.fr"
       authtype="1"
       protocol="IPV6"
-      roaming_protocol="IPV4V6"
       user_editable="false"
       type="default,dun,supl,xcap,mms"
   />
@@ -2682,15 +2623,6 @@
       mvno_match_data="208090021"
       user_editable="false"
   />
-
-<!--
-  <apn carrier="SFR webphone"
-      mcc="208"
-      mnc="10"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="SFR webphone"
       mcc="208"
@@ -3646,17 +3578,6 @@
       type="xcap"
   />
 
-
-
-<!--
-  <apn carrier="Orange Internet Móvil"
-      mcc="214"
-      mnc="03"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Orange Internet Móvil"
       mcc="214"
       mnc="03"
@@ -3929,16 +3850,6 @@
       mvno_type="spn"
       mvno_match_data="mobilR"
   />
-
-
-<!--
-  <apn carrier="Yoigo Internet"
-      mcc="214"
-      mnc="04"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Internet"
       mcc="214"
@@ -4327,7 +4238,7 @@
       mnc="06"
       apn="lowi.private.omv.es"
       mvno_type="spn"
-      mvno_match_data="LOWI"
+      mvno_match_data="Lowi"
       type="default,supl"
   />
 
@@ -4341,9 +4252,75 @@
       user="wap@wap"
       password="wap125"
       mvno_type="spn"
-      mvno_match_data="LOWI"
+      mvno_match_data="Lowi"
       type="mms"
       authtype="1"
+  />
+
+  <apn carrier="IMS"
+      mcc="214"
+      mnc="06"
+      apn="ims"
+      protocol="IPV4V6"
+      user_editable="false"
+      type="ims"
+      mvno_type="spn"
+      mvno_match_data="Lowi"
+  />
+
+  <apn carrier="hos"
+      mcc="214"
+      mnc="06"
+      apn="hos"
+      protocol="IPV4V6"
+      user_editable="false"
+      type="xcap"
+      mvno_type="spn"
+      mvno_match_data="Lowi"
+  />
+
+  <apn carrier="FINETWORK_Data"
+      mcc="214"
+      mnc="06"
+      apn="fi.omv.es"
+      mvno_type="spn"
+      mvno_match_data="Finetwork"
+      type="default,supl,dun"
+  />
+
+  <apn carrier="FINETWORK_MMS"
+      mcc="214"
+      mnc="06"
+      apn="mms.fi.omv.es"
+      mmsc="http://mms.fi.omv.es/servlets/mms"
+      mmsproxy="212.73.32.10"
+      mmsport="80"
+      mvno_type="spn"
+      mvno_match_data="Finetwork"
+      type="mms"
+      authtype="1"
+  />
+
+  <apn carrier="FINETWORK_IMS"
+      mcc="214"
+      mnc="06"
+      apn="ims"
+      protocol="IPV4V6"
+      user_editable="false"
+      type="ims"
+      mvno_type="spn"
+      mvno_match_data="Finetwork"
+  />
+
+  <apn carrier="hos"
+      mcc="214"
+      mnc="06"
+      apn="hos"
+      protocol="IPV4V6"
+      user_editable="false"
+      type="xcap"
+      mvno_type="spn"
+      mvno_match_data="Finetwork"
   />
 
   <apn carrier="Lebara Internet"
@@ -4858,15 +4835,6 @@
       user_visible="false"
   />
 
-<!--
-  <apn carrier="T-Mobile H"
-      mcc="216"
-      mnc="30"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Telekom HU NET"
       mcc="216"
       mnc="30"
@@ -5236,16 +5204,6 @@
       type="mms"
   />
 
-
-<!--
-  <apn carrier="T-Mobile"
-      mcc="219"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Internet"
       mcc="219"
       mnc="01"
@@ -5431,16 +5389,6 @@
       authtype="1"
   />
 
-
-<!--
-  <apn carrier="Broadband"
-      mcc="219"
-      mnc="10"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Broadband"
       mcc="219"
       mnc="10"
@@ -5501,7 +5449,6 @@
       apn="internet.ht.hr"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="HOS"
@@ -5814,7 +5761,6 @@
       apn="VSBLAPP"
       type="mms,cbs"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE1000000000000"
   />
@@ -5825,7 +5771,6 @@
       apn="VSBLADMIN"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE1000000000000"
   />
@@ -5858,7 +5803,6 @@
       apn="VSBLAPP"
       type="mms,cbs"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE1000000000000"
   />
@@ -5869,7 +5813,6 @@
       apn="VSBLADMIN"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE1000000000000"
   />
@@ -5906,7 +5849,6 @@
       type="mms,cbs"
       mtu="1428"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE2000000000000"
   />
@@ -5918,7 +5860,6 @@
       type="fota"
       mtu="1428"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="BAE2000000000000"
   />
@@ -6033,7 +5974,6 @@
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vzwreseller.com/servlets/mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="BA01490000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -6046,7 +5986,6 @@
       type="default,dun,supl,mms,fota,ia"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_type="iccid"
       mvno_match_data="890158"
   />
@@ -6057,8 +5996,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -6680,15 +6617,6 @@
       user_visible="false"
   />
 
-<!--
-  <apn carrier="Acc. Internet da cell"
-      mcc="222"
-      mnc="10"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="FW WEB"
       mcc="222"
       mnc="08"
@@ -6837,17 +6765,6 @@
       mvno_match_data="ERG"
   />
 
-  <apn carrier="Iliad"
-      mcc="222"
-      mnc="50"
-      authtype="0"
-      apn="iliad"
-      mmsc="http://mms.iliad.it"
-      type="default,supl,mms"
-      mvno_match_data="F003"
-      mvno_type="gid"
-  />
-
   <apn carrier="PosteMobile WAP"
       mcc="222"
       mnc="33"
@@ -6872,7 +6789,6 @@
       mnc="33"
       apn="ims"
       type="ims"
-      protocol="IPV4"
       user_visible="false"
   />
 
@@ -6936,6 +6852,29 @@
       type="xcap"
       protocol="IPV4V6"
       user_visible="false"
+  />
+
+  <apn carrier="Iliad"
+      mcc="222"
+      mnc="50"
+      authtype="0"
+      apn="iliad"
+      mmsc="http://mms.iliad.it"
+      type="default,supl,mms"
+      mvno_match_data="F003"
+      mvno_type="gid"
+  />
+
+  <apn carrier="Iliad IMS"
+      mcc="222"
+      mnc="50"
+      authtype="0"
+      apn="ims"
+      type="ims"
+      protocol="IPV6"
+      user_visible="false"
+      mvno_match_data="F003"
+      mvno_type="gid"
   />
 
   <apn carrier="WEB CoopVoce" 
@@ -7361,15 +7300,6 @@
       mvno_match_data="0000000099"
   />
 
-<!--
-  <apn carrier="Vodafone live!"
-      mcc="226"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Vodafone live!"
       mcc="226"
       mnc="01"
@@ -7400,16 +7330,6 @@
       apn="ims"
       type="ims"
   />
-
-
-<!--
-  <apn carrier="Cosmote Connect Mobile"
-      mcc="226"
-      mnc="03"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Connect Mobile"
       mcc="226"
@@ -7477,16 +7397,6 @@
       type="default,supl"
   />
 
-
-<!--
-  <apn carrier="Cosmote Connect Mobile"
-      mcc="226"
-      mnc="06"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Connect Mobile"
       mcc="226"
       mnc="06"
@@ -7669,17 +7579,6 @@
       mvno_match_data="MTV Mobile"
       mvno_type="spn"
   />
-
-
-
-<!--
-  <apn carrier="Orange Internet"
-      mcc="226"
-      mnc="10"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Orange MMS"
       mcc="226"
@@ -7762,8 +7661,6 @@
       apn="hos"
       authtype="0"
       type="xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       user_visible="false"
   />
 
@@ -7911,15 +7808,6 @@
       mvno_match_data="Lycamobile"
   />
 
-<!--
-  <apn carrier="T-Mobile CZ"
-      mcc="230"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="T-Mobile Internet"
       mcc="230"
       mnc="01"
@@ -8041,7 +7929,6 @@
       apn="ims"
       authtype="0"
       type="ims"
-      protocol="IPV4"
   />
 
   <apn carrier="Orange Internet"
@@ -8102,8 +7989,6 @@
       mtu="1500"
       mmsc="http://mmsc.telekom.sk"
       type="mms,xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="Telekom IMS"
@@ -8151,8 +8036,6 @@
       mtu="1500"
       mmsc="http://mmsc.telekom.sk"
       type="mms,xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_type="spn"
       mvno_match_data="Telekom SK"
   />
@@ -8169,8 +8052,6 @@
       mtu="1500"
       mmsc="http://mmsc.telekom.sk"
       type="mms,xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_type="spn"
       mvno_match_data="Juro.sk"
   />
@@ -8414,8 +8295,6 @@
       mmsport="8001"
       authtype="1"
       type="mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       user_editable="true"
   />
 
@@ -8430,15 +8309,6 @@
       user_editable="true"
   />
 
-<!--
-  <apn carrier="T-Mobile Internet"
-      mcc="232"
-      mnc="03"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="T Internet"
       mcc="232"
       mnc="03"
@@ -8448,7 +8318,6 @@
       password="tm"
       authtype="1"
       type="default,supl"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="HOS"
@@ -8482,7 +8351,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8497,7 +8365,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8526,7 +8393,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8541,7 +8407,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8570,7 +8435,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8585,7 +8449,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8614,7 +8477,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8629,7 +8491,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8704,7 +8565,6 @@
       password="tm"
       authtype="1"
       type="default,supl"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="07"
   />
@@ -8747,7 +8607,6 @@
       password="tm"
       authtype="1"
       type="default,supl"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="30"
   />
@@ -8790,7 +8649,6 @@
       password="tm"
       authtype="1"
       type="default,supl"
-      roaming_protocol="IPV4"
       mvno_type="gid"
       mvno_match_data="FF"
   />
@@ -8893,7 +8751,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8908,7 +8765,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8937,7 +8793,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8952,7 +8807,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -8981,7 +8835,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -8996,7 +8849,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -9025,7 +8877,6 @@
       apn="internet.t-mobile.at"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="T"
       password="tm"
       user_editable="false"
@@ -9040,7 +8891,6 @@
       apn="hos"
       type="mms,xcap"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user="t-mobile"
       password="tm"
       mmsc="http://mmsc.t-mobile.at/servlets/mms"
@@ -9097,8 +8947,6 @@
       mmsport="8001"
       authtype="1"
       type="mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       user_editable="true"
   />
 
@@ -9751,7 +9599,6 @@
       apn="ims"
       authtype="0"
       type="ims"
-      protocol="IPV4"
       user_visible="false"
   />
 
@@ -9854,7 +9701,6 @@
       apn="ims"
       authtype="0"
       type="ims"
-      protocol="IPV4"
       user_visible="false"
       mvno_match_data="C1"
       mvno_type="gid"
@@ -10308,7 +10154,6 @@
   <apn carrier="EEZONE"
       mcc="234"
       mnc="30"
-      protocol="IPV4"
       apn="EEZONE"
       type="xcap"
   />
@@ -10364,7 +10209,6 @@
   <apn carrier="EEZONE"
       mcc="234"
       mnc="30"
-      protocol="IPV4"
       apn="EEZONE"
       type="xcap"
       mvno_type="gid"
@@ -11009,8 +10853,6 @@
       mmsport="8080"
       type="mms"
       authtype="1"
-      mvno_type="gid"
-      mvno_match_data="519F"
   />
 
   <apn carrier="MMS"
@@ -11024,8 +10866,6 @@
       mmsport="8080"
       type="mms"
       authtype="1"
-      mvno_type="gid"
-      mvno_match_data="519F"
   />
 
   <apn carrier="Internet"
@@ -11034,8 +10874,6 @@
       apn="internet"
       authtype="1"
       type="default,supl"
-      mvno_type="gid"
-      mvno_match_data="519F"
   />
 
   <apn carrier="Internet"
@@ -11046,8 +10884,6 @@
       password="webgo"
       authtype="1"
       type="default,supl"
-      mvno_type="gid"
-      mvno_match_data="519F"
   />
 
   <apn carrier="Internet"
@@ -11139,7 +10975,6 @@
       mmsport="8799"
       protocol="IPV4V6"
       type="default,supl,mms,xcap"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="3hotspot"
@@ -13777,6 +13612,15 @@
       user_editable="true"
   />
 
+  <apn carrier="Megafon XCAP"
+      mcc="250"
+      mnc="02"
+      apn="hos"
+      type="xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
   <apn carrier="Yota Internet"
       mcc="250"
       mnc="02"
@@ -13921,6 +13765,30 @@
       mvno_match_data="ROSTELECOM"
   />
 
+  <apn carrier="Rostelecom IMS"
+      mcc="250"
+      mnc="20"
+      apn="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="ims"
+      user_editable="false"
+      mvno_type="spn"
+      mvno_match_data="ROSTELECOM"
+  />
+
+  <apn carrier="Rostelecom HOS"
+      mcc="250"
+      mnc="20"
+      apn="hos"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="xcap"
+      user_editable="false"
+      mvno_type="spn"
+      mvno_match_data="ROSTELECOM"
+  />
+
   <apn carrier="SberMobile Internet"
       mcc="250"
       mnc="20"
@@ -13950,6 +13818,7 @@
       mvno_type="gid"
       mvno_match_data="FA3207FFFFFFFFFFFFFF"
   />
+
 
   <apn carrier="VTB Mobile Internet"
       mcc="250"
@@ -14100,6 +13969,13 @@
       user_editable="true"
   />
 
+  <apn carrier="VTB Mobile Internet"
+      mcc="250"
+      mnc="26"
+      apn="vtb"
+      type="default"
+  />
+
   <apn carrier="Beeline Internet"
       mcc="250"
       mnc="99"
@@ -14202,7 +14078,6 @@
       authtype="1"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="Kyivstar IMS"
@@ -14478,15 +14353,6 @@
       user_visible="false"
   />
 
-<!--
-  <apn carrier="T-mobile.pl"
-      mcc="260"
-      mnc="02"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Internet"
       mcc="260"
       mnc="02"
@@ -14494,7 +14360,6 @@
       protocol="IPV4V6"
       authtype="1"
       type="default,supl"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="T-Mobile.pl HOS"
@@ -14507,7 +14372,6 @@
       mmsport="8080"
       authtype="1"
       type="mms,xcap"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="T-Mobile.pl IMS"
@@ -14797,16 +14661,6 @@
       type="xcap"
   />
 
-
-<!--
-  <apn carrier="Telekom Internet"
-      mcc="262"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="congstar Internet"
       mcc="262"
       mnc="01"
@@ -14827,7 +14681,6 @@
       user="telekom"
       password="telekom"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user_visible="false"
       authtype="1"
       mmsc="http://mms.t-mobile.de/servlets/mms"
@@ -14871,7 +14724,6 @@
       user="telekom"
       password="telekom"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user_visible="false"
       authtype="1"
       mmsc="http://mms.t-mobile.de/servlets/mms"
@@ -14915,7 +14767,6 @@
       user="telekom"
       password="telekom"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user_visible="false"
       authtype="1"
       mmsc="http://mms.t-mobile.de/servlets/mms"
@@ -15462,45 +15313,6 @@
       authtype="0"
       user_visible="false"
       mtu="1500"
-  />
-
-<!--
-  <apn carrier="Telekom Internet"
-      mcc="262"
-      mnc="01"
-      apn="internet.telekom"
-      user="telekom"
-      password="telekom"
-      authtype="1"
-      mmsproxy="172.28.23.131"
-      mmsc="http://mms.t-mobile.de/servlets/mms"
-      mmsport="8008"
-      mvno_match_data="debitel"
-      mvno_type="spn"
-      protocol="IP"
-  />
-
-  <apn carrier="Vodafone DE"
-      mcc="262"
-      mnc="02"
-      apn=""
-      type="ia"
-  />
--->
-
-  <apn carrier="VF DE Event"
-      mcc="262"
-      mnc="02"
-      apn="event.vodafone.de"
-      mmsc="http://139.7.24.1/servlets/mms"
-      mmsproxy="139.007.029.017"
-      mmsport="80"
-      user="VDF2"
-      authtype="0"
-      type="mms"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-      user_editable="false"
   />
 
   <apn carrier="VF DE Web"
@@ -15875,16 +15687,6 @@
       roaming_protocol="IPV4V6"
   />
 
-
-<!--
-  <apn carrier="Vodafone Net2"
-      mcc="268"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Vodafone Net2"
       mcc="268"
       mnc="01"
@@ -15912,16 +15714,6 @@
       type="ims"
       user_visible="false"
   />
-
-
-<!--
-  <apn carrier="PortalOptimus"
-      mcc="268"
-      mnc="03"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="Internet"
       mcc="268"
@@ -15971,16 +15763,6 @@
       mvno_type="spn"
       mvno_match_data="Lycamobile"
   />
-
-
-<!--
-  <apn carrier="tmn internet"
-      mcc="268"
-      mnc="06"
-      apn=""
-      type="ia"
-  />
--->
 
   <apn carrier="internet"
       mcc="268"
@@ -17308,15 +17090,6 @@
       authtype="0"
   />
 
-<!--
-  <apn carrier="T-Mobile MK Internet"
-      mcc="294"
-      mnc="01"
-      apn=""
-      type="ia"
-  />
--->
-
   <apn carrier="Telekom MK Internet"
       mcc="294"
       mnc="01"
@@ -18195,8 +17968,6 @@
       mnc="500"
       apn="mobile.bm"
       type="default"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mtu="1500"
       mvno_match_data="55"
       mvno_type="gid"
@@ -18207,8 +17978,6 @@
       mnc="500"
       apn="mobile.bm"
       type="mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mtu="1500"
       mmsport="80"
       mmsc="http://mms.mobile.bm"
@@ -20168,6 +19937,24 @@
       mnc="370"
       apn="internet"
       type="default"
+  />
+
+  <apn carrier="Docomo"
+      mcc="310"
+      mnc="370"
+      apn="xcap"
+      type="xcap"
+      user_editable="false"
+      user_visible="false"
+  />
+
+  <apn carrier="Docomo"
+      mcc="310"
+      mnc="370"
+      apn="ims"
+      type="ims"
+      user_editable="false"
+      user_visible="false"
   />
 
   <apn carrier="iConnect Advanced"
@@ -22450,6 +22237,37 @@
       mvno_match_data="2AC9"
   />
 
+  <apn carrier="Google Fi - Tm"
+      carrier_id = "1989"
+      mcc="310"
+      mnc="260"
+      apn="h2g2"
+      type="default,supl,mms,fota,cbs,ia"
+      user="none"
+      server="*"
+      password="none"
+      mmsc="http://mmsc1.g-mms.com/mms/wapenc"
+      protocol="IPV6"
+      mvno_match_data="4276"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+  />
+
+  <apn carrier="Google Fi - Tm"
+      carrier_id = "1989"
+      mcc="310"
+      mnc="260"
+      apn="ims"
+      type="ims"
+      protocol="IPV6"
+      mvno_match_data="4276"
+      mvno_type="gid"
+      network_type_bitmask="13|20"
+      user_editable="false"
+      user_visible="false"
+  />
+
   <apn carrier="T-Mobile Tethering"
       mcc="310"
       mnc="270"
@@ -22841,6 +22659,1780 @@
       user_visible="false"
       mvno_type="gid"
       mvno_match_data="52FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="20FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="21FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="22FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="23FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="24FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="25FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="26FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="27FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="28FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="29FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="410"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="311"
+      mnc="180"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="280"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ereseller"
+      type="default,mms,supl,fota,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
+      mmsport="80"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
+  />
+
+  <apn carrier="Reach Mobile ATT"
+      mcc="310"
+      mnc="950"
+      apn="resellerMHT"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      user_editable="false"
+      user_visible="false"
+      mvno_match_data="30FF"
   />
 
   <apn carrier="T-Mobile Tethering"
@@ -23521,6 +25113,20 @@
       user_visible="false"
   />
 
+  <apn carrier="ATT eSIM Bootstrap"
+      mcc="310"
+      mnc="380"
+      apn="OEMSETUPA"
+      type="vsim, ia"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mtu="1430"
+      user_visible="false"
+      user_editable="false"
+      mvno_type="gid"
+      mvno_match_data="39FF"
+  />
+
   <apn carrier="Celloneet MMS"
       mcc="310"
       mnc="390"
@@ -23929,6 +25535,24 @@
       mnc="470"
       apn="internet"
       type="default"
+  />
+
+  <apn carrier="Docomo"
+      mcc="310"
+      mnc="470"
+      apn="xcap"
+      type="xcap"
+      user_editable="false"
+      user_visible="false"
+  />
+
+  <apn carrier="Docomo"
+      mcc="310"
+      mnc="470"
+      apn="ims"
+      type="ims"
+      user_editable="false"
+      user_visible="false"
   />
 
   <apn carrier="DataConnect"
@@ -27990,7 +29614,7 @@
       mmsc="http://mmsc.gci.net"
       mmsproxy="24.237.158.34"
       mmsport="9201"
-      type="mms"
+      type="mms,xcap"
       protocol="IPV4V6"
   />
 
@@ -28573,6 +30197,7 @@
       mcc="311"
       mnc="480"
       apn="VZWADMIN"
+      user_visible="false"
       type="fota"
       protocol="IPV4V6"
       roaming_protocol="IP"
@@ -28591,6 +30216,7 @@
       mcc="311"
       mnc="480"
       apn="IMS"
+      user_visible="false"
       type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IPV6"
@@ -28609,6 +30235,7 @@
       mcc="311"
       mnc="480"
       apn="VZWAPP"
+      user_visible="false"
       type="cbs,mms"
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
@@ -30038,6 +31665,7 @@
       mnc="480"
       apn="VZWADMIN"
       type="fota"
+      user_visible="false"
       protocol="IPV4V6"
       roaming_protocol="IP"
       mvno_type="gid"
@@ -30049,6 +31677,7 @@
       mnc="480"
       apn="IMS"
       type="ims,ia"
+      user_visible="false"
       protocol="IPV4V6"
       roaming_protocol="IPV6"
       mvno_type="gid"
@@ -30061,6 +31690,7 @@
       apn="VZWAPP"
       mmsc="http://mms.vzwreseller.com/servlets/mms"
       type="cbs,mms"
+      user_visible="false"
       protocol="IPV4V6"
       roaming_protocol="IP"
       mvno_type="gid"
@@ -30090,18 +31720,20 @@
       mvno_type="gid"
       mvno_match_data="BA01450000000000"
       user_editable="false"
+      user_visible="false"
   />
 
   <apn carrier="Xfinity Mobile IMS"
       mcc="311"
       mnc="480"
       apn="IMS"
-      type="ims"
+      type="ims,ia"
       protocol="IPV4V6"
       roaming_protocol="IP"
       mvno_type="gid"
       mvno_match_data="BA01450000000000"
       user_editable="false"
+      user_visible="false"
   />
 
   <apn carrier="Xfinity Mobile CBS"
@@ -30114,40 +31746,7 @@
       mvno_type="gid"
       mvno_match_data="BA01450000000000"
       user_editable="false"
-  />
-
-  <apn carrier="Charter FOTA"
-      mcc="311"
-      mnc="480"
-      apn="VZWADMIN"
-      type="fota"
-      protocol="IPV4V6"
-      roaming_protocol="IP"
-      mvno_type="gid"
-      mvno_match_data="BA01450000000000"
-  />
-
-  <apn carrier="Charter IMS"
-      mcc="311"
-      mnc="480"
-      apn="IMS"
-      type="ims,ia"
-      protocol="IPV4V6"
-      roaming_protocol="IPV6"
-      mvno_type="gid"
-      mvno_match_data="BA01450000000000"
-  />
-
-  <apn carrier="Charter CBS"
-      mcc="311"
-      mnc="480"
-      apn="VZWAPP"
-      mmsc="http://mms.vzwreseller.com/servlets/mms"
-      type="cbs,mms"
-      protocol="IPV4V6"
-      roaming_protocol="IP"
-      mvno_type="gid"
-      mvno_match_data="BA01450000000000"
+      user_visible="false"
   />
 
   <apn carrier="Charter FOTA"
@@ -31763,6 +33362,31 @@
       mtu="1342"
   />
 
+  <apn carrier="DOCOMO PACIFIC FirstNet"
+      mcc="313"
+      mnc="110"
+      apn="firstnet-phone"
+      type="default"
+  />
+
+  <apn carrier="DOCOMO PACIFIC FirstNet"
+      mcc="313"
+      mnc="110"
+      apn="xcap"
+      type="xcap"
+      user_editable="false"
+      user_visible="false"
+  />
+
+  <apn carrier="DOCOMO PACIFIC FirstNet"
+      mcc="313"
+      mnc="110"
+      apn="ims"
+      type="ims"
+      user_editable="false"
+      user_visible="false"
+  />
+
   <apn carrier="rinawireless"
       mcc="313"
       mnc="220"
@@ -31814,7 +33438,6 @@
       mmsproxy="proxy.mobilecore.lla.com"
       mmsport="80"
       type="mms"
-      protocol="IPV4V6"
       mtu="1280"
       user_visible="false"
   />
@@ -40252,7 +41875,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
-  
+
   <apn carrier="IMS"
       mcc="334"
       mnc="05"
@@ -41783,7 +43406,6 @@
       mnc="180"
       apn="ims"
       type="ims"
-      protocol="IPV4"
       user_editable="false"
   />
 
@@ -41938,7 +43560,6 @@
       mnc="600"
       apn="ims"
       type="ims"
-      protocol="IPV4"
       user_editable="false"
   />
 
@@ -42366,7 +43987,6 @@
       mcc="364"
       mnc="39"
       apn="ims"
-      protocol="IPV4"
       type="ims"
       user_editable="false"
   />
@@ -42868,6 +44488,7 @@
       type="mms"
   />
 
+
   <apn carrier="DIGICEL"
       mcc="374"
       mnc="130"
@@ -42950,30 +44571,6 @@
       type="mms"
   />
 
-  <apn carrier="Azercell IMS"
-      mcc="400"
-      mnc="01"
-      apn="ims"
-      type="ims"
-      protocol="IPV4V6"
-	  roaming_protocol="IPV4V6"
-      user_visible="true"
-      user_editable="true"
-      authtype="0"
-  />
-
-  <apn carrier="Azercell XCAP"
-      mcc="400"
-      mnc="01"
-      apn="hos"
-      type="xcap"
-      protocol="IPV4V6"
-	  roaming_protocol="IPV4V6"
-      user_visible="true"
-      user_editable="true"
-      authtype="0"
-  />
-
   <apn carrier="Bakcell Internet"
       mcc="400"
       mnc="02"
@@ -43030,13 +44627,6 @@
       apn="mms"
       mmsc="http://mmsc.nar.az"
       type="mms"
-  />
-
-  <apn carrier="Naxtel"
-      mcc="400"
-      mnc="06"
-      apn="internet"
-      type="default,supl"
   />
 
   <apn carrier="Beeline Internet"
@@ -43149,8 +44739,30 @@
   <apn carrier="B-Mobile"
       mcc="402"
       mnc="11"
-      apn="default"
+      apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="XCAP"
+      mcc="402"
+      mnc="11"
+      apn="hos"
+      type="xcap"
+      user_visible="false"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="IMS"
+      mcc="402"
+      mnc="11"
+      apn="ims"
+      type="ims"
+      user_visible="false"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="TashiCell"
@@ -50413,7 +52025,7 @@
       mmsproxy="172.25.20.12"
       mmsport="8080"
       type="mms"
-      authtype="1"
+	  authtype="1"
   />
 
   <apn carrier="IMS"
@@ -50850,7 +52462,6 @@
       mnc="03"
       apn="touch"
       type="default,supl"
-      protocol="IPV4"
   />
 
   <apn carrier="touch_WAP"
@@ -51068,6 +52679,7 @@
       type="default,supl"
       authtype="1"
   />
+
   <apn carrier="MMS"
       mcc="418"
       mnc="05"
@@ -51077,6 +52689,7 @@
       mmsport="8080"
       type="mms"
   />
+
   <apn carrier="IMS"
       mcc="418"
       mnc="05"
@@ -51085,6 +52698,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
+
   <apn carrier="XCAP"
       mcc="418"
       mnc="05"
@@ -51093,18 +52707,43 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
-  <apn carrier="XCAP"
-      mcc="418"
-      mnc="05"
-      apn="xcap"
-      type="xcap"
-      user_visible="false"
-  />
+
   <apn carrier="SanaTel"
       mcc="418"
       mnc="08"
       apn="default"
       type="default,supl"
+  />
+
+  <apn carrier="ZAIN-GPRS"
+      mcc="418"
+      mnc="20"
+      apn="internet"
+      user="atheer"
+      password="atheer"
+      authtype="1"
+      type="default,supl"
+  />
+
+   <apn carrier="IMS"
+     mcc="418"
+     mnc="20"
+     apn="ims"
+     type="ims"
+     protocol="IPV4V6"
+   />
+ 
+  <apn carrier="Zain-MMS"
+      mcc="418"
+      mnc="20"
+      apn="MMS"
+      user="atheer"
+      password="atheer"
+      authtype="1"
+      mmsc="http://mms:8002/"
+      mmsproxy="172.29.11.12"
+      mmsport="8080"
+      type="mms"
   />
 
   <apn carrier="Zain IQ Internet"
@@ -51122,35 +52761,6 @@
       protocol="IPV4V6"
       authtype="1"
       type="xcap"
-  />
-
-  <apn carrier="ZAIN-GPRS"
-      mcc="418"
-      mnc="20"
-      apn="internet"
-      user="atheer"
-      password="atheer"
-      authtype="1"
-      type="default,supl"
-  />
-   <apn carrier="IMS"
-     mcc="418"
-     mnc="20"
-     apn="ims"
-     type="ims"
-     protocol="IPV4V6"
-   />
-  <apn carrier="Zain-MMS"
-      mcc="418"
-      mnc="20"
-      apn="MMS"
-      user="atheer"
-      password="atheer"
-      authtype="1"
-      mmsc="http://mms:8002/"
-      mmsproxy="172.29.11.12"
-      mmsport="8080"
-      type="mms"
   />
 
   <apn carrier="ZAIN-GPRS"
@@ -51339,7 +52949,6 @@
       mnc="01"
       apn="ims"
       type="ims"
-      protocol="IPV4"
   />
 
   <apn carrier="mobily Net Postpaid"
@@ -51347,6 +52956,8 @@
       mnc="03"
       apn="web1"
       type="default,supl"
+      protocol="IPV4V6"
+      authtype="1"
   />
 
   <apn carrier="Mobily prepaid - GPRS"
@@ -51372,8 +52983,6 @@
       mnc="03"
       apn="web2"
       type="default,supl"
-      protocol="IPV4V6"
-      authtype="1"
   />
 
   <apn carrier="mobily MMS Postpaid"
@@ -51404,7 +53013,6 @@
       mcc="420"
       mnc="03"
       apn="ims"
-      protocol="IPV4"
       mtu="1500"
       type="ims"
   />
@@ -51413,7 +53021,6 @@
       mcc="420"
       mnc="03"
       apn="xcap"
-      protocol="IPV4"
       mtu="1280"
       type="xcap"
   />
@@ -51471,7 +53078,6 @@
       mnc="06"
       apn="Lebara"
       type="default,supl"
-      protocol="IPV4"
       roaming_protocol="IPV4"
   />
 
@@ -51535,6 +53141,34 @@
       user_editable="false"
       mvno_type="spn"
       mvno_match_data="Red Bull Mobile"
+  />
+
+  <apn carrier="internet"
+      mcc="420"
+      mnc="10"
+      apn="internet.redbullmobile.sa"
+      type="default"
+      mvno_type="spn"
+      mvno_match_data="Red Bull MOBILE"
+  />
+
+  <apn carrier="ims"
+      mcc="420"
+      mnc="10"
+      apn="ims"
+      user_editable="true"
+      type="ims"
+      mvno_type="spn"
+      mvno_match_data="Red Bull MOBILE"
+  />
+
+  <apn carrier="xcap"
+      mcc="420"
+      mnc="10"
+      apn="xcap"
+      type="xcap"
+      mvno_type="spn"
+      mvno_match_data="Red Bull MOBILE"
   />
 
   <apn carrier="SabaFon"
@@ -52072,7 +53706,6 @@
       mcc="426"
       mnc="01"
       apn="ims"
-      protocol="IPV4"
       user_editable="false"
       type="ims"
   />
@@ -52081,7 +53714,6 @@
       mcc="426"
       mnc="01"
       apn="hos"
-      protocol="IPV4"
       user_editable="false"
       type="xcap"
   />
@@ -52505,28 +54137,6 @@
       type="mms"
   />
 
-  <apn carrier="BEELINE IMS"
-      mcc="434"
-      mnc="04"
-      apn="IMS"
-      type="ims"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
-      user_visible="false"   
-      user_editable="false"
-  />
-
-  <apn carrier="BEELINE XCAP"
-      mcc="434"
-      mnc="04"
-      apn="xcap"
-      type="xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
-      user_visible="false"      
-      user_editable="false"
-  />
-
   <apn carrier="UCELL Internet"
       mcc="434"
       mnc="05"
@@ -52542,28 +54152,6 @@
       mmsproxy="10.64.164.10"
       mmsport="8080"
       type="mms"
-  />
-
-  <apn carrier="UCELL IMS"
-      mcc="434"
-      mnc="05"
-      apn="IMS"
-      type="ims"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
-      user_visible="false"   
-      user_editable="false"
-  />
-
-  <apn carrier="UCELL XCAP"
-      mcc="434"
-      mnc="05"
-      apn="xcap"
-      type="xcap"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
-      user_visible="false"      
-      user_editable="false"
   />
 
   <apn carrier="Perfectum Mobile"
@@ -52935,7 +54523,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -52948,7 +54535,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53006,7 +54592,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53019,7 +54604,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53077,7 +54661,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53090,7 +54673,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53294,7 +54876,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
       mvno_type="gid"
       mvno_match_data="10"
@@ -53309,7 +54890,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
       mvno_type="gid"
       mvno_match_data="10"
@@ -53406,7 +54986,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53419,7 +54998,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53433,7 +55011,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53446,7 +55023,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53504,7 +55080,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53517,7 +55092,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53612,6 +55186,34 @@
       mvno_match_data="20"
   />
 
+  <apn carrier="jcommobile"
+      mcc="440"
+      mnc="54"
+      apn="jcommobile.jp"
+      user="jcom@jcommobile.jp"
+      password="jcom"
+      authtype="2"
+      type="default,supl,cbs,mms,fota"
+      protocol="IP"
+      roaming_protocol="IP"
+      mtu="1440"
+      mvno_type="gid"
+      mvno_match_data="22"
+  />
+
+  <apn carrier="jcommobile IMS"
+      mcc="440"
+      mnc="54"
+      apn="IMS"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mtu="1440"
+      user_visible="false"
+      mvno_type="gid"
+      mvno_match_data="22"
+  />
+
   <apn carrier="povo"
       mcc="440"
       mnc="54"
@@ -53693,7 +55295,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
       mvno_type="gid"
       mvno_match_data="10"
@@ -53708,7 +55309,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
       mvno_type="gid"
       mvno_match_data="10"
@@ -53805,7 +55405,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53818,7 +55417,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53832,7 +55430,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53845,7 +55442,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53903,7 +55499,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53916,7 +55511,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53974,7 +55568,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -53987,7 +55580,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54045,7 +55637,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54058,7 +55649,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54116,7 +55706,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54129,7 +55718,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54187,7 +55775,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54200,7 +55787,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54258,7 +55844,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54271,7 +55856,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54329,7 +55913,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54342,7 +55925,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54401,7 +55983,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54414,7 +55995,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54472,7 +56052,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54485,7 +56064,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54543,7 +56121,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54556,7 +56133,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54614,7 +56190,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54627,7 +56202,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54685,7 +56259,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54698,7 +56271,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54756,7 +56328,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54769,7 +56340,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54827,7 +56397,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -54840,7 +56409,6 @@
       authtype="2"
       type="default,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mtu="1420"
   />
 
@@ -56715,6 +58283,15 @@
       roaming_protocol="IPV4V6"
       user_editable="false"
   />
+  
+  <apn carrier="Webbing"
+      mcc="454"
+      mnc="35"
+      apn="wbdata"
+      type="default,ia,dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
 
   <apn carrier="SmarTone MAC"
       mcc="455"
@@ -58463,6 +60040,7 @@
       authtype="0"
       protocol="IPV6"
       roaming_protocol="IPV4V6"
+      user_visible="false"
   />
 
   <apn carrier="Emergency"
@@ -58475,6 +60053,7 @@
       roaming_protocol="IPV4V6"
       mvno_match_data="505029"
       mvno_type="imsi"
+      user_visible="false"
   />
 
   
@@ -59657,7 +61236,7 @@
       apn="xcap"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      type="hos"
+      type="xcap"
       authtype="1"
   />
 
@@ -59715,6 +61294,16 @@
       mnc="05"
       apn="ims"
       type="ims"
+      authtype="1"
+  />
+
+  <apn carrier="shxcap"
+      mcc="525"
+      mnc="05"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      apn="shxcap"
+      type="xcap"
       authtype="1"
   />
 
@@ -59914,14 +61503,6 @@
       apn="ims"
       type="ims"
       protocol="IPV6"
-      roaming_protocol="IPV6"
-  />
-
-  <apn carrier="XCAP"
-      mcc="530"
-      mnc="05"
-      apn="xcap"
-      type="xcap"
   />
 
   <apn carrier="Data"
@@ -63041,6 +64622,7 @@
       password="movistarsv"
       type="default,supl"
       user_editable="false"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Movistar INTERNET"
@@ -63051,6 +64633,7 @@
       password="movistarsv"
       type="default,supl"
       user_editable="false"
+      protocol="IPV4V6"
   />
 
   <apn carrier="Internet Claro"
@@ -63409,7 +64992,6 @@
       mnc="01"
       apn="ims"
       type="ims"
-      protocol="IPV4"
   />
 
   <apn carrier="INTERNET"
@@ -63780,9 +65362,9 @@
       apn="igprs.claro.com.ar"
       mmsc="http://mms.claro.com.ar"
       authtype="0"
-      type="mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
+      type="mms"
   />
 
   <apn carrier="IMS"
@@ -63954,26 +65536,6 @@
       roaming_protocol="IPV6"
   />
 
-     <apn carrier="Unifique"
-      mcc="724"
-      mnc="29"
-      apn="unifique.br"
-      type="default,supl,xcap"
-      protocol="IPV4V6"
-      roaming_protocol="IPV4V6"
-  />
-
-  <apn carrier="IMS"
-      mcc="724"
-      mnc="29"
-      apn="IMS"
-      type="ims"
-      protocol="IPV6"
-      roaming_protocol="IPV6"
-      user_editable="false"
-      user_visible="false"
-  />
-
   <apn carrier="Java Session"
       mcc="724"
       mnc="05"
@@ -64061,6 +65623,15 @@
       type="ims"
       user_editable="false"
   />
+ 
+  <apn carrier="Vivo Emergency"
+      mcc="724"
+      mnc="06"
+      apn="ims.sos"
+      protocol="IPV4V6"
+      type="Emergency"
+      user_editable="false"
+  />
 
   <apn carrier="Vivo Internet"
       mcc="724"
@@ -64106,6 +65677,15 @@
       user_editable="false"
   />
 
+  <apn carrier="Vivo Emergency"
+      mcc="724"
+      mnc="10"
+      apn="ims.sos"
+      protocol="IPV4V6"
+      type="Emergency"
+      user_editable="false"
+  />
+
   <apn carrier="Vivo MMS"
       mcc="724"
       mnc="11"
@@ -64147,6 +65727,15 @@
       authtype="1"
       protocol="IPV4V6"
       type="ims"
+      user_editable="false"
+  />
+
+  <apn carrier="Vivo Emergency"
+      mcc="724"
+      mnc="11"
+      apn="ims.sos"
+      protocol="IPV4V6"
+      type="Emergency"
       user_editable="false"
   />
 
@@ -64271,6 +65860,15 @@
       user_editable="false"
   />
 
+  <apn carrier="Vivo Emergency"
+      mcc="724"
+      mnc="23"
+      apn="ims.sos"
+      protocol="IPV4V6"
+      type="Emergency"
+      user_editable="false"
+  />
+
   <apn carrier="OI INTERNET"
       mcc="724"
       mnc="24"
@@ -64313,6 +65911,26 @@
       roaming_protocol="IPV4V6"
       user_visible="false"
       user_editable="false"
+  />
+
+  <apn carrier="Unifique"
+      mcc="724"
+      mnc="29"
+      apn="unifique.br"
+      type="default,supl,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
+
+  <apn carrier="IMS"
+      mcc="724"
+      mnc="29"
+      apn="IMS"
+      type="ims"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      user_editable="false"
+      user_visible="false"
   />
 
   <apn carrier="OI INTERNET"
@@ -65064,7 +66682,6 @@
       mnc="130"
       apn="ims.avt.com"
       type="ims"
-      protocol="IPV4"
   />
 
   <apn carrier="UNE"
@@ -65330,7 +66947,6 @@
       mnc="03"
       apn="ims"
       type="ims"
-      protocol="IPV4"
       user_editable="false"
   />
 
@@ -65365,13 +66981,12 @@
       type="default,supl"
   />
 
-  <apn carrier="enet"
+   <apn carrier="enet"
       mcc="738"
       mnc="040"
       apn="enet"
       authtype="0"
       type="default,supl"
-      protocol="IPV4"
   />
 
   <apn carrier="ims"
@@ -65379,7 +66994,6 @@
       mnc="040"
       apn="ims"
       type="ims,Emergency"
-      protocol="IPV4"
       user_editable="false"
   />
 
@@ -65462,8 +67076,6 @@
       mnc="02"
       apn="ims"
       type="ims"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       user_visible="false"
   />
 
@@ -65472,7 +67084,6 @@
       mnc="02"
       apn="emergency.volte.ims.cnt.net.ec"
       type="Emergency"
-      protocol="IPV4"
 	  roaming_protocol="IPV4V6"
       user_visible="false"
   />
@@ -65603,7 +67214,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user_editable="false"
   />
 
@@ -65613,9 +67223,18 @@
       apn="sos"
       type="Emergency"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       user_editable="false"
       user_visible="false"
+  />
+
+  <apn carrier="Personal UT"
+      mcc="744"
+      mnc="05"
+      apn="ut"
+      type="xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4"
+      user_editable="false"
   />
 
   <apn carrier="Telesur"
@@ -65803,15 +67422,6 @@
       type="default"
   />
 
-  <apn carrier="CIOT Vodafone"
-      mcc="901"
-      mnc="28"
-      apn="ciot.vodafone.com"
-      user="vodafone"
-      password="vodafone"
-      type="default"
-  />
-
   <apn carrier="Mascom_Internet"
       mcc="652"
       mnc="01"
@@ -65843,6 +67453,15 @@
       apn="internet.be"
       type="default,supl"
   />
+  
+  <apn carrier="Webbing"
+      mcc="901"
+      mnc="01"
+      apn="wbdata"
+      type="default,ia,dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
 
   <apn carrier="internet"
       mcc="901"
@@ -65851,6 +67470,15 @@
       type="default,supl"
   />
 
+  <apn carrier="CIOT Vodafone"
+      mcc="901"
+      mnc="28"
+      apn="ciot.vodafone.com"
+      user="vodafone"
+      password="vodafone"
+      type="default"
+  />
+  
   <apn carrier="mobiledata"
       mcc="901"
       mnc="37"
@@ -65909,7 +67537,6 @@
       mmsport="80"
       type="default,supl,mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65922,7 +67549,6 @@
       mmsc="https://mms.plspictures.com"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65937,7 +67563,6 @@
       mmsport="80"
       type="default,supl,mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65949,7 +67574,6 @@
       apn="a9.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65964,7 +67588,6 @@
       mmsport="80"
       type="default,supl,mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00015FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65976,7 +67599,6 @@
       apn="am.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00015FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -65991,7 +67613,6 @@
       mmsport="80"
       type="default,supl,mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00079FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66003,7 +67624,6 @@
       apn="d3.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00079FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66018,7 +67638,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00100FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66030,7 +67649,6 @@
       apn="eq.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00100FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66045,7 +67663,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00120FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66057,7 +67674,6 @@
       apn="gm.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00120FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66072,7 +67688,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00174FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66084,7 +67699,6 @@
       apn="mj.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00174FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66099,7 +67713,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00175FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66111,7 +67724,6 @@
       apn="mk.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00175FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66126,7 +67738,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00265FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66138,7 +67749,6 @@
       apn="rb.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00265FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66153,7 +67763,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00257FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid"
       bearer_bitmask="12|13"
@@ -66165,7 +67774,6 @@
       apn="ti.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="A00257FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
       mvno_type="gid" 
       bearer_bitmask="12|13"
@@ -66177,8 +67785,6 @@
       apn="cdma"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_match_data="BAE0000000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -66193,7 +67799,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66203,7 +67808,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -66213,7 +67817,6 @@
       apn="boost.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66223,7 +67826,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66233,8 +67835,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66247,7 +67847,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66257,7 +67856,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -66267,7 +67865,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66277,7 +67874,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66287,7 +67883,6 @@
       apn="usccinternet"
       type="default,dun,ia"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="LTE - Test IMS"
@@ -66305,8 +67900,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66319,7 +67912,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66329,7 +67921,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66339,7 +67930,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66349,8 +67939,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66360,8 +67948,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66374,7 +67960,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66384,7 +67969,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66394,7 +67978,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66404,8 +67987,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66427,7 +68008,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66437,7 +68017,6 @@
       apn="boost.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66447,7 +68026,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66457,8 +68035,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66471,7 +68047,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66481,7 +68056,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66491,7 +68065,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66501,8 +68074,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66515,7 +68086,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66525,7 +68095,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66535,7 +68104,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66545,8 +68113,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66559,7 +68125,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66569,7 +68134,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66579,7 +68143,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66589,8 +68152,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66600,7 +68161,6 @@
       apn="pcweb.metropcs.com"
       type="dun"
       protocol="IPV6"
-      roaming_protocol="IPV4"
       mvno_match_data="6D38"
       user_editable="false"
       user_visible="false"
@@ -66613,7 +68173,6 @@
       apn="pcweb.metropcs.com"
       type="dun"
       protocol="IPV6"
-      roaming_protocol="IPV4"
       mvno_match_data="6D38"
       user_editable="false"
       user_visible="false"
@@ -66626,7 +68185,6 @@
       apn="VZWINTERNET"
       type="default,dun,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|16|18|20"
   />
 
@@ -66636,7 +68194,6 @@
       apn="VZWADMIN"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|16|18|20"
   />
 
@@ -66657,7 +68214,6 @@
       type="cbs,mms"
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|16|18|20"
   />
 
@@ -66667,8 +68223,6 @@
       apn="cdma"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66678,8 +68232,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66689,8 +68241,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66700,8 +68250,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66711,8 +68259,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66722,8 +68268,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66733,8 +68277,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66744,8 +68286,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66755,8 +68295,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66766,8 +68304,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66777,8 +68313,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66788,8 +68322,6 @@
       apn="cdma"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_match_data="BAE0000000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -66804,7 +68336,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66814,7 +68345,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -66824,7 +68354,6 @@
       apn="boost.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66834,7 +68363,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66844,8 +68372,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66858,7 +68384,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66868,7 +68393,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -66878,7 +68402,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66888,7 +68411,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66901,7 +68423,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66911,7 +68432,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66921,7 +68441,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66931,8 +68450,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66945,7 +68462,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66955,7 +68471,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66965,7 +68480,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66975,8 +68489,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -66989,7 +68501,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -66999,7 +68510,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -67009,7 +68519,6 @@
       apn="boost.pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67019,7 +68528,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67029,8 +68537,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67043,7 +68549,6 @@
       mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67053,7 +68558,6 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="14|18"
   />
 
@@ -67063,7 +68567,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67073,7 +68576,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67084,7 +68586,6 @@
       type="default,dun,supl,mms,fota,ia"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
   />
 
   <apn carrier="LTE IMS"
@@ -67102,8 +68603,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67116,7 +68615,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67126,7 +68624,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67136,7 +68633,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67146,8 +68642,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67157,8 +68651,6 @@
       apn="cdma"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_match_data="BAE0000000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -67173,7 +68665,6 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67183,7 +68674,6 @@
       apn="pamsn"
       type="dun"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67193,7 +68683,6 @@
       apn="otasn"
       type="fota"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       bearer_bitmask="12|13"
   />
 
@@ -67203,8 +68692,6 @@
       apn="cdma"
       type="default,dun,supl,mms,fota,ims,ia,bip"
       mmsc="https://mms.sprintpcs.com"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67215,7 +68702,6 @@
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vzwreseller.com/servlets/mms"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="BA01450000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -67227,7 +68713,6 @@
       apn="VZWINTERNET"
       type="default,dun,supl"
       protocol="IPV4V6"
-      roaming_protocol="IPV4"
       mvno_match_data="BA01490000000000"
       mvno_type="gid"
       user_editable="false"
@@ -67239,8 +68724,6 @@
       apn="cdma"
       type="default,dun,supl,cbs,mms,fota,ims,ia,bip"
       mmsc="http://mms.vtext.com/servlets/mms"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       mvno_match_data="BAE0000000000000"
       mvno_type="gid"
       bearer_bitmask="4|5|6|7|8|12"
@@ -67252,8 +68735,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67263,8 +68744,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67274,8 +68753,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67285,8 +68762,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67296,8 +68771,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67307,8 +68780,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67318,8 +68789,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67329,8 +68798,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67340,8 +68807,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -67351,8 +68816,6 @@
       apn="cdma"
       type="default,dun,hipri,cbs,mms,fota,ims,bip"
       mmsc="http://mmsc1.uscc.net/mmsc/MMS"
-      protocol="IPV4"  
-      roaming_protocol="IPV4"
       bearer_bitmask="4|5|6|7|8|12"
   />
 
@@ -71856,7 +73319,7 @@
       user_editable="false"
   />
 
-<apn carrier="Copper Valley"
+  <apn carrier="Copper Valley"
       mcc="312"
       mnc="380"
       apn="cvt01"
@@ -71922,7 +73385,7 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
-  
+
    <apn carrier="Consumer Cellular"
       mcc="310"
       mnc="410"
