@@ -16,6 +16,7 @@ jobs:
         include:
           - model: "SM-G998B"
             region: "DBT"
+            imei: "352731456025349"
 
     steps:
     - name: Checkout repo
@@ -27,7 +28,7 @@ jobs:
       run: |
        sudo apt-get update
        sudo apt-get install -y lz4 python3-pip simg2img
-       pip3 install git+https://github.com/Linux4/samloader.git
+       pip3 install git+https://github.com/martinetd/samloader.git
 
     - name: Compare latest version with current version
       id: check
@@ -44,7 +45,7 @@ jobs:
     - name: Fetch firmware
       if: steps.check.outputs.need_update == 1
       run: |
-       samloader -m ${{ matrix.model }} -r ${{ matrix.region }} download -v ${{ steps.check.outputs.latest_version }} -o ${{ matrix.model }}-${{ steps.check.outputs.latest_version_short }}.zip.enc4 -D
+       samloader -m ${{ matrix.model }} -r ${{ matrix.region }} -i ${{ matrix.imei }} download -v ${{ steps.check.outputs.latest_version }} -o ${{ matrix.model }}-${{ steps.check.outputs.latest_version_short }}.zip.enc4 -D
        mkdir -p out
        echo ${{ steps.check.outputs.latest_version_short }} >> version.txt
 
